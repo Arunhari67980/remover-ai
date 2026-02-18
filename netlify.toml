@@ -1,0 +1,31 @@
+[build]
+  # Build the React frontend with Vite
+  command = "npm run build"
+  # Publish the built frontend
+  publish = "dist"
+  # Node version
+  node_version = "18.19.0"
+
+[dev]
+  # Local development command
+  command = "npm run dev"
+  port = 3000
+
+# Redirect all requests to index.html for SPA routing
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Environment variables
+[context.production.environment]
+  VITE_API_URL = "https://your-backend-api.com/remove-bg"
+  VITE_API_KEY = "your-api-key"
+
+[context.deploy-preview.environment]
+  VITE_API_URL = "https://preview-api.your-backend.com/remove-bg"
+  VITE_API_KEY = "preview-api-key"
+
+[context.branch-deploy.environment]
+  VITE_API_URL = "http://localhost:8000/remove-bg"
+  VITE_API_KEY = "local-api-key"
