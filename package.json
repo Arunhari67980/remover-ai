@@ -1,0 +1,33 @@
+{
+  "name": "bg-remover-api",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Professional AI-powered background remover with React UI and FastAPI backend",
+  "author": "Your Name",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "dev:host": "vite --host",
+    "build": "vite build",
+    "build:analyze": "vite build --ssrManifest",
+    "preview": "vite preview",
+    "lint": "eslint . --ext js,jsx",
+    "format": "prettier --write \"src/**/*.{js,jsx,json,css,md}\"",
+    "backend": "uvicorn main:app --reload --port 8000",
+    "start": "vite && uvicorn main:app --reload --port 8000"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.7",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.3.6",
+    "vite": "^5.0.8"
+  }
+}
