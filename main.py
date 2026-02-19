@@ -5,19 +5,26 @@ from pydantic import BaseModel
 from rembg import remove
 import io
 import base64
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 app = FastAPI(title="AI Background Remover API", version="1.0.0")
 
-# 🌐 CORS Configuration - Allow all origins for development
+# 🌐 CORS Configuration - Restrict to production frontend
+ALLOWED_ORIGINS = os.getenv("ALLOWED_ORIGINS", "http://localhost:3000").split(",")
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=ALLOWED_ORIGINS,
     allow_credentials=True,
-    allow_methods=["*"],
+    allow_methods=["GET", "POST", "OPTIONS"],
     allow_headers=["*"],
 )
 
-API_KEY = "mysecretkey123"
+# API Key from environment (safer than hardcoded)
+API_KEY = os.getenv("API_KEY", "mysecretkey123")
 
 # Request model for base64 image
 class ImageRequest(BaseModel):
@@ -68,7 +75,7 @@ async def remove_bg(
 @app.options("/remove-bg")
 async def options_remove_bg():
     """Handle CORS preflight requests."""
-    return {"status": "ok"}
+    return {}
 
 @app.get("/health")
 async def health_check():
