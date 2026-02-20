@@ -76,8 +76,8 @@ After 30 minutes:
 
 | What | Where | How to Share |
 |------|-------|------|
-| **Your Live App** | https://bg-remover-api.vercel.app | Send this URL to friends! 📲 |
-| **Your API** | https://bg-remover-api.onrender.com | Technical people use this |
+| **Your Live App** | https://remover-ai.vercel.app | Send this URL to friends! 📲 |
+| **Your API** | https://remover-ai.onrender.com | Technical people use this |
 | **Your Code** | GitHub | You can edit and auto-update |
 
 ---

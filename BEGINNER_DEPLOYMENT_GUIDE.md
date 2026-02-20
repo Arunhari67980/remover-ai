@@ -134,7 +134,7 @@ You should see output showing all the files being added.
 
 1. Go to: https://github.com/new
 2. Fill in:
-   - **Repository name**: `bg-remover-api`
+   - **Repository name**: `remover-ai`
    - **Description**: `AI Background Remover - React + FastAPI`
    - **Public**: Yes (leave it public)
 3. Click **"Create repository"**
@@ -147,7 +147,7 @@ GitHub will show you a page with commands. Copy and paste these in your terminal
 
 ```powershell
 git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/bg-remover-api.git
+git remote add origin https://github.com/YOUR_USERNAME/remover-ai.git
 git push -u origin main
 ```
 
@@ -155,7 +155,7 @@ git push -u origin main
 
 Example:
 ```powershell
-git remote add origin https://github.com/arun123/bg-remover-api.git
+git remote add origin https://github.com/arun123/remover-ai.git
 git push -u origin main
 ```
 
@@ -165,7 +165,7 @@ When it asks for credentials:
 
 ✅ Your code is now on GitHub!
 
-**Check**: Go to https://github.com/YOUR_USERNAME/bg-remover-api and see your code there!
+**Check**: Go to https://github.com/YOUR_USERNAME/remover-ai and see your code there!
 
 ---
 
@@ -192,7 +192,7 @@ Click **"Sign up"** (top right)
 
 ## 3D: Select Your Repository
 
-1. Find **"bg-remover-api"** in the list
+1. Find **"remover-ai"** in the list
 2. Click **"Connect"** next to it
 3. GitHub will ask permission again - click **"Authorize"**
 
@@ -202,7 +202,7 @@ You'll see a form. Fill in:
 
 | Field | What to Enter |
 |-------|---------------|
-| **Name** | `bg-remover-api` |
+| **Name** | `remover-ai` |
 | **Runtime** | `Python 3` |
 | **Build Command** | `pip install -r backend/requirements.txt` |
 | **Start Command** | `uvicorn backend.main:app --host 0.0.0.0 --port $PORT` |
@@ -245,7 +245,7 @@ You'll see a loading screen. **Wait 2-3 minutes** while it deploys...
 Once deployment is done, you'll see a URL at the top like:
 
 ```
-https://bg-remover-api-xxxxx.onrender.com
+https://remover-ai-xxxxx.onrender.com
 ```
 
 📌 **SAVE THIS URL!** You'll need it later.
@@ -254,7 +254,7 @@ https://bg-remover-api-xxxxx.onrender.com
 
 Open this in your browser:
 ```
-https://bg-remover-api-xxxxx.onrender.com/docs
+https://remover-ai-xxxxx.onrender.com/docs
 ```
 
 You should see an interactive API documentation page. This means your backend is working! 🎉
@@ -293,10 +293,10 @@ Click and add this:
 
 ```
 Name: VITE_API_URL
-Value: https://bg-remover-api-xxxxx.onrender.com/remove-bg
+Value: https://remover-ai-xxxxx.onrender.com/remove-bg
 ```
 
-⚠️ Replace `bg-remover-api-xxxxx` with YOUR actual Render URL from Step 3H!
+⚠️ Replace `remover-ai-xxxxx` with YOUR actual Render URL from Step 3H!
 
 Then add another:
 
@@ -319,7 +319,7 @@ Once deployment is done, you'll see:
 
 ```
 ✅ Deployment successful!
-https://bg-remover-api.vercel.app
+https://remover-ai.vercel.app
 ```
 
 📌 **SAVE THIS URL!** This is your app URL to share!
@@ -334,7 +334,7 @@ Your backend needs to know it's okay to receive requests from your Vercel fronte
 
 1. Visit: https://render.com
 2. Click **"Dashboard"**
-3. Click your **"bg-remover-api"** service
+3. Click your **"remover-ai"** service
 
 ## 5B: Update Environment Variables
 
@@ -349,7 +349,7 @@ https://YOUR-VERCEL-URL.vercel.app
 
 Example:
 ```
-https://bg-remover-api.vercel.app
+https://remover-ai.vercel.app
 ```
 
 5. Click **"Save Changes"**
@@ -366,7 +366,7 @@ Now let's make sure everything works!
 
 1. Open your Vercel URL in browser:
 ```
-https://bg-remover-api.vercel.app
+https://remover-ai.vercel.app
 ```
 
 You should see your Background Remover app! 🎉
@@ -389,17 +389,17 @@ Save these somewhere safe:
 
 **Frontend (Share This!):**
 ```
-https://bg-remover-api.vercel.app
+https://remover-ai.vercel.app
 ```
 
 **Backend API (Technical):**
 ```
-https://bg-remover-api-xxxxx.onrender.com
+https://remover-ai-xxxxx.onrender.com
 ```
 
 **API Docs (For Testing):**
 ```
-https://bg-remover-api-xxxxx.onrender.com/docs
+https://remover-ai-xxxxx.onrender.com/docs
 ```
 
 ---
@@ -491,7 +491,7 @@ All of this is **FREE FOREVER** ✅
 Your app is now live on the internet for anyone to use!
 
 **Next steps:**
-- Share your Vercel URL with friends: `https://bg-remover-api.vercel.app`
+- Share your Vercel URL with friends: `https://remover-ai.vercel.app`
 - Monitor usage in Render and Vercel dashboards
 - Make updates by pushing to GitHub
 

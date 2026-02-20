@@ -51,7 +51,7 @@ git commit -m "Initial commit - Background Remover App"
 ### Create Empty Repository on GitHub:
 
 - [ ] Go to: https://github.com/new
-- [ ] Repository name: `bg-remover-api`
+- [ ] Repository name: `remover-ai`
 - [ ] Click "Create repository"
 
 ### Connect & Upload:
@@ -60,7 +60,7 @@ Copy these commands from GitHub and run in PowerShell:
 
 ```powershell
 git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/bg-remover-api.git
+git remote add origin https://github.com/YOUR_USERNAME/remover-ai.git
 git push -u origin main
 ```
 
@@ -71,7 +71,7 @@ When asked:
 - Password: Your GitHub password
 
 **Verify:**
-- [ ] Go to `https://github.com/YOUR_USERNAME/bg-remover-api`
+- [ ] Go to `https://github.com/YOUR_USERNAME/remover-ai`
 - [ ] See your files there? ✅ Success!
 
 ---
@@ -101,7 +101,7 @@ Fill in these fields:
 
 | Field | Copy This |
 |-------|-----------|
-| Name | `bg-remover-api` |
+| Name | `remover-ai` |
 | Runtime | `Python 3` |
 | Build Command | `pip install -r backend/requirements.txt` |
 | Start Command | `uvicorn backend.main:app --host 0.0.0.0 --port $PORT` |
@@ -127,7 +127,7 @@ ALLOWED_ORIGINS = *
 
 You'll see something like:
 ```
-https://bg-remover-api-xxxxx.onrender.com
+https://remover-ai-xxxxx.onrender.com
 ```
 
 📌 **WRITE THIS DOWN!** You need it in Step 4.
@@ -158,10 +158,10 @@ Look for "Environment Variables" section. Add 2 variables:
 
 **Variable 1:**
 ```
-VITE_API_URL = https://bg-remover-api-xxxxx.onrender.com/remove-bg
+VITE_API_URL = https://remover-ai-xxxxx.onrender.com/remove-bg
 ```
 
-⚠️ Replace `bg-remover-api-xxxxx` with YOUR Render URL from Step 3!
+⚠️ Replace `remover-ai-xxxxx` with YOUR Render URL from Step 3!
 
 **Variable 2:**
 ```
@@ -190,7 +190,7 @@ https://bg-remover-api.vercel.app
 ## 🔐 STEP 5: Update CORS (Important!)
 
 - [ ] Go to: https://render.com/dashboard
-- [ ] Click your "bg-remover-api" service
+- [ ] Click your "remover-ai" service
 - [ ] Click "Environment" tab
 
 ### Update ALLOWED_ORIGINS:
@@ -212,7 +212,7 @@ https://bg-remover-api.vercel.app
 
 ### Test Frontend:
 
-- [ ] Open: `https://bg-remover-api.vercel.app`
+- [ ] Open: `https://remover-ai.vercel.app`
 - [ ] See your app? ✅
 - [ ] Upload an image
 - [ ] Wait 3-5 seconds
@@ -246,9 +246,9 @@ https://bg-remover-api.vercel.app
 
 **Bookmark these:**
 
-- **App**: `https://bg-remover-api.vercel.app`
-- **API Docs**: `https://bg-remover-api-xxxxx.onrender.com/docs`
-- **GitHub**: `https://github.com/YOUR_USERNAME/bg-remover-api`
+- **App**: `https://remover-ai.vercel.app`
+- **API Docs**: `https://remover-ai-xxxxx.onrender.com/docs`
+- **GitHub**: `https://github.com/YOUR_USERNAME/remover-ai`
 - **Vercel Dashboard**: `https://vercel.com/dashboard`
 - **Render Dashboard**: `https://render.com/dashboard`
 

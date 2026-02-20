@@ -22,7 +22,7 @@ git commit -m "Initial commit - Background Remover App"
 
 ```powershell
 git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/bg-remover-api.git
+git remote add origin https://github.com/YOUR_USERNAME/remover-ai.git
 git push -u origin main
 ```
 
@@ -60,7 +60,7 @@ Value: *
 
 **Variable 1:**
 ```
-VITE_API_URL = https://bg-remover-api-xxxxx.onrender.com/remove-bg
+VITE_API_URL=https://remover-ai-xxxxx.onrender.com/remove-bg
 ```
 *(Replace `xxxxx` with your Render URL)*
 
@@ -73,7 +73,7 @@ VITE_API_KEY = my-secret-bg-remover-key-2026
 ### Render - Update CORS After Vercel Deploy:
 
 ```
-ALLOWED_ORIGINS = https://bg-remover-api.vercel.app
+ALLOWED_ORIGINS = https://remover-ai.vercel.app
 ```
 *(Or your custom Vercel URL)*
 
@@ -102,7 +102,7 @@ Use this to track your URLs:
 ===== MY DEPLOYMENT INFO =====
 
 GitHub Username: _____________________
-GitHub Repo: https://github.com/[USERNAME]/bg-remover-api
+GitHub Repo: https://github.com/[USERNAME]/remover-ai
 
 Render Backend URL: https://[YOUR-BACKEND].onrender.com
 Render API Key: _____________________
@@ -201,7 +201,7 @@ Copy this message to friends:
 ```
 Check out my Background Remover app!
 
-👉 https://bg-remover-api.vercel.app
+👉 https://remover-ai.vercel.app
 
 Just upload an image and it removes the background for you!
 ```
